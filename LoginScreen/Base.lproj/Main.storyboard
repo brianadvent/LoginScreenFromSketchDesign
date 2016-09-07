@@ -1,14 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="16A313a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LoginScreen" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +17,97 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bgLogin" translatesAutoresizingMaskIntoConstraints="NO" id="PlE-Rs-QnQ">
+                                <frame key="frameInset"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBGCard" translatesAutoresizingMaskIntoConstraints="NO" id="9XZ-ch-b3B">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="346" id="A8P-2m-4D9"/>
+                                    <constraint firstAttribute="height" constant="415" id="v0L-7a-AFb"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myApp" translatesAutoresizingMaskIntoConstraints="NO" id="2T4-8A-bSw">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="0Vs-EK-f7k"/>
+                                    <constraint firstAttribute="width" constant="159" id="lWZ-9O-9A5"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" text="Tim Cook" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YHk-IY-hIb" customClass="LoginTextField" customModule="LoginScreen" customModuleProvider="target">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="fd9-cC-bhm"/>
+                                </constraints>
+                                <color key="textColor" red="0.35686274509803922" green="0.396078431372549" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USERNAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hN4-OO-HQd">
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="10"/>
+                                <color key="textColor" red="0.78823529411764703" green="0.78823529411764703" blue="0.78823529411764703" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" text="Tim Cook" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VFZ-2Y-3Yk" customClass="LoginTextField" customModule="LoginScreen" customModuleProvider="target">
+                                <color key="textColor" red="0.35686274509999999" green="0.39607843139999999" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PASSWORD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZr-E6-ceo">
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="10"/>
+                                <color key="textColor" red="0.78823529410000004" green="0.78823529410000004" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpC-tv-gPs">
+                                <color key="backgroundColor" red="0.61176470588235299" green="0.75686274509803919" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="19"/>
+                                <state key="normal" title="REGISTER">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XHl-Hw-7si">
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                <state key="normal" title="Forgot your Password?">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9XZ-ch-b3B" firstAttribute="top" secondItem="2T4-8A-bSw" secondAttribute="bottom" constant="-173" id="3Nn-9F-Hgt"/>
+                            <constraint firstItem="VFZ-2Y-3Yk" firstAttribute="top" secondItem="tZr-E6-ceo" secondAttribute="bottom" constant="-19" id="Csu-4r-bSD"/>
+                            <constraint firstItem="jpC-tv-gPs" firstAttribute="leading" secondItem="VFZ-2Y-3Yk" secondAttribute="leading" id="DKL-HL-0kF"/>
+                            <constraint firstItem="jpC-tv-gPs" firstAttribute="top" secondItem="VFZ-2Y-3Yk" secondAttribute="bottom" constant="8" id="EKV-bK-RrS"/>
+                            <constraint firstItem="9XZ-ch-b3B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Es6-Kt-2HU"/>
+                            <constraint firstItem="jpC-tv-gPs" firstAttribute="width" secondItem="VFZ-2Y-3Yk" secondAttribute="width" id="FM0-dL-Ni5"/>
+                            <constraint firstItem="2T4-8A-bSw" firstAttribute="centerX" secondItem="9XZ-ch-b3B" secondAttribute="centerX" id="JCE-7O-FfX"/>
+                            <constraint firstItem="VFZ-2Y-3Yk" firstAttribute="leading" secondItem="tZr-E6-ceo" secondAttribute="trailing" constant="-66" id="KUV-CN-Nd5"/>
+                            <constraint firstItem="VFZ-2Y-3Yk" firstAttribute="width" secondItem="YHk-IY-hIb" secondAttribute="width" id="Kwt-tK-GW3"/>
+                            <constraint firstItem="VFZ-2Y-3Yk" firstAttribute="leading" secondItem="YHk-IY-hIb" secondAttribute="leading" id="Mca-8w-7C0"/>
+                            <constraint firstItem="YHk-IY-hIb" firstAttribute="leading" secondItem="hN4-OO-HQd" secondAttribute="trailing" constant="-65" id="MhY-II-GYP"/>
+                            <constraint firstItem="YHk-IY-hIb" firstAttribute="top" secondItem="hN4-OO-HQd" secondAttribute="bottom" constant="-17" id="QHZ-iq-gOo"/>
+                            <constraint firstItem="XHl-Hw-7si" firstAttribute="top" secondItem="9XZ-ch-b3B" secondAttribute="bottom" constant="-19" id="TTY-0p-350"/>
+                            <constraint firstItem="9XZ-ch-b3B" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="U6z-co-RAE"/>
+                            <constraint firstItem="jpC-tv-gPs" firstAttribute="height" secondItem="VFZ-2Y-3Yk" secondAttribute="height" id="ZDA-Ky-rQx"/>
+                            <constraint firstItem="YHk-IY-hIb" firstAttribute="top" secondItem="2T4-8A-bSw" secondAttribute="bottom" constant="24" id="aY0-gn-OeP"/>
+                            <constraint firstItem="VFZ-2Y-3Yk" firstAttribute="top" secondItem="YHk-IY-hIb" secondAttribute="bottom" constant="8" id="afw-4F-LYT"/>
+                            <constraint firstItem="VFZ-2Y-3Yk" firstAttribute="height" secondItem="YHk-IY-hIb" secondAttribute="height" id="bPA-tc-nqs"/>
+                            <constraint firstItem="YHk-IY-hIb" firstAttribute="trailing" secondItem="9XZ-ch-b3B" secondAttribute="trailing" constant="-48.5" id="eet-8d-gqK"/>
+                            <constraint firstItem="YHk-IY-hIb" firstAttribute="leading" secondItem="9XZ-ch-b3B" secondAttribute="leading" constant="46.5" id="gWh-rO-QQi"/>
+                            <constraint firstItem="XHl-Hw-7si" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rWi-H3-KgK"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordButton" destination="XHl-Hw-7si" id="R1z-F1-Q4g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bgLogin" width="414" height="736"/>
+        <image name="loginBGCard" width="367" height="477"/>
+        <image name="myApp" width="88" height="110"/>
+    </resources>
 </document>

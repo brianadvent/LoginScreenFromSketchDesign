@@ -12,6 +12,14 @@
 		86B04FA21D8075A600C34B6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86B04FA01D8075A600C34B6C /* Main.storyboard */; };
 		86B04FA41D8075A600C34B6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86B04FA31D8075A600C34B6C /* Assets.xcassets */; };
 		86B04FA71D8075A600C34B6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86B04FA51D8075A600C34B6C /* LaunchScreen.storyboard */; };
+		86B04FAF1D80785500C34B6C /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B04FAE1D80785500C34B6C /* LoginTextField.swift */; };
+		86B04FB81D80A52F00C34B6C /* bgLogin@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 86B04FB11D80A52F00C34B6C /* bgLogin@2x.jpg */; };
+		86B04FB91D80A52F00C34B6C /* bgLogin@3x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 86B04FB21D80A52F00C34B6C /* bgLogin@3x.jpg */; };
+		86B04FBA1D80A52F00C34B6C /* Colors.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 86B04FB31D80A52F00C34B6C /* Colors.rtf */; };
+		86B04FBB1D80A52F00C34B6C /* loginBGCard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86B04FB41D80A52F00C34B6C /* loginBGCard@2x.png */; };
+		86B04FBC1D80A52F00C34B6C /* loginBGCard@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86B04FB51D80A52F00C34B6C /* loginBGCard@3x.png */; };
+		86B04FBD1D80A52F00C34B6C /* myApp@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 86B04FB61D80A52F00C34B6C /* myApp@2x.jpg */; };
+		86B04FBE1D80A52F00C34B6C /* myApp@3x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 86B04FB71D80A52F00C34B6C /* myApp@3x.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		86B04FA31D8075A600C34B6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86B04FA61D8075A600C34B6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86B04FA81D8075A600C34B6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86B04FAE1D80785500C34B6C /* LoginTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
+		86B04FB11D80A52F00C34B6C /* bgLogin@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bgLogin@2x.jpg"; sourceTree = "<group>"; };
+		86B04FB21D80A52F00C34B6C /* bgLogin@3x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bgLogin@3x.jpg"; sourceTree = "<group>"; };
+		86B04FB31D80A52F00C34B6C /* Colors.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Colors.rtf; sourceTree = "<group>"; };
+		86B04FB41D80A52F00C34B6C /* loginBGCard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loginBGCard@2x.png"; sourceTree = "<group>"; };
+		86B04FB51D80A52F00C34B6C /* loginBGCard@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loginBGCard@3x.png"; sourceTree = "<group>"; };
+		86B04FB61D80A52F00C34B6C /* myApp@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "myApp@2x.jpg"; sourceTree = "<group>"; };
+		86B04FB71D80A52F00C34B6C /* myApp@3x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "myApp@3x.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +70,30 @@
 		86B04F9B1D8075A600C34B6C /* LoginScreen */ = {
 			isa = PBXGroup;
 			children = (
+				86B04FB01D80A52F00C34B6C /* Assets */,
 				86B04F9C1D8075A600C34B6C /* AppDelegate.swift */,
 				86B04F9E1D8075A600C34B6C /* ViewController.swift */,
+				86B04FAE1D80785500C34B6C /* LoginTextField.swift */,
 				86B04FA01D8075A600C34B6C /* Main.storyboard */,
 				86B04FA31D8075A600C34B6C /* Assets.xcassets */,
 				86B04FA51D8075A600C34B6C /* LaunchScreen.storyboard */,
 				86B04FA81D8075A600C34B6C /* Info.plist */,
 			);
 			path = LoginScreen;
+			sourceTree = "<group>";
+		};
+		86B04FB01D80A52F00C34B6C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				86B04FB11D80A52F00C34B6C /* bgLogin@2x.jpg */,
+				86B04FB21D80A52F00C34B6C /* bgLogin@3x.jpg */,
+				86B04FB31D80A52F00C34B6C /* Colors.rtf */,
+				86B04FB41D80A52F00C34B6C /* loginBGCard@2x.png */,
+				86B04FB51D80A52F00C34B6C /* loginBGCard@3x.png */,
+				86B04FB61D80A52F00C34B6C /* myApp@2x.jpg */,
+				86B04FB71D80A52F00C34B6C /* myApp@3x.jpg */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +128,7 @@
 				TargetAttributes = {
 					86B04F981D8075A600C34B6C = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = SBWZW765RG;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -123,9 +156,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86B04FBB1D80A52F00C34B6C /* loginBGCard@2x.png in Resources */,
 				86B04FA71D8075A600C34B6C /* LaunchScreen.storyboard in Resources */,
+				86B04FBD1D80A52F00C34B6C /* myApp@2x.jpg in Resources */,
+				86B04FB91D80A52F00C34B6C /* bgLogin@3x.jpg in Resources */,
+				86B04FBA1D80A52F00C34B6C /* Colors.rtf in Resources */,
+				86B04FBC1D80A52F00C34B6C /* loginBGCard@3x.png in Resources */,
+				86B04FB81D80A52F00C34B6C /* bgLogin@2x.jpg in Resources */,
 				86B04FA41D8075A600C34B6C /* Assets.xcassets in Resources */,
 				86B04FA21D8075A600C34B6C /* Main.storyboard in Resources */,
+				86B04FBE1D80A52F00C34B6C /* myApp@3x.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86B04FAF1D80785500C34B6C /* LoginTextField.swift in Sources */,
 				86B04F9F1D8075A600C34B6C /* ViewController.swift in Sources */,
 				86B04F9D1D8075A600C34B6C /* AppDelegate.swift in Sources */,
 			);
@@ -258,6 +299,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SBWZW765RG;
 				INFOPLIST_FILE = LoginScreen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.brianAdvent.LoginScreen;
@@ -270,6 +312,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SBWZW765RG;
 				INFOPLIST_FILE = LoginScreen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.brianAdvent.LoginScreen;
